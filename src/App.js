@@ -1,9 +1,17 @@
+import React from 'react';
+import { Navbar } from './Navbar/Navbar';
+import {Banner} from './Banner/banner';
+import {GlobalStyle} from './Styles/GlobalStyle';
 
 function App() {
+
+  
   return (
-    <div>
-     <h1>Hello web</h1>
-    </div>
+   <>
+   <GlobalStyle/>
+      <Navbar />
+      <Banner />
+   </>
   );
 }
 
