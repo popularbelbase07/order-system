@@ -5,7 +5,7 @@ import { DialogContent, DialogFooter, ConfirmButton } from '../FoodDialog/foodDi
 import { getPrice } from '../FoodDialog/foodDialog';
 
 // Create database
-// const database = window.firebase.database();
+const database = window.firebase.database();
 
 
 const OrderStyled = styled.div`
@@ -63,13 +63,14 @@ padding:0px;
 height: 100%;
 
 `
-/*
+
 // Sending the order to the firebase realtime database
 function sendOrder(orders, {email, displayName}){
-     var newOrderRef = database.ref('orders').push();
+     var newOrderRef = database.ref("orders").push();
      const newOrders = orders.map(order => {
          return Object.keys(order).reduce((accomulator, orderKey) => {
              if(!order[orderKey]){
+                 // return current accomulator
              return accomulator;
          }
          if(orderKey === "toppings"){
@@ -93,7 +94,7 @@ function sendOrder(orders, {email, displayName}){
      });
 
 }
-*/
+
 
 /*
 
@@ -303,7 +304,8 @@ const deleteItem = index => {
                     <ConfirmButton onClick={() => {
                         //alert("Checkout confirm")
                         if(loggedIn){
-                         console.log('Logged in');                       
+                        // console.log('Logged in');  
+                        sendOrder(orders, loggedIn)                     
                         }
                         else{
                             Login();

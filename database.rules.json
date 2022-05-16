@@ -1,6 +1,10 @@
 {
-  "rules": {
+  "rules":
+  {   
+  "orders":
+  {
     ".read": true,
     ".write": true
   }
+ }
 }
