@@ -32,7 +32,7 @@
                 
                 https://order-system-777c5.web.app
 
-* Email setup
+* Email setup function
 
                 https://github.com/firebase/functions-samples/tree/main/quickstarts/email-users
 
@@ -40,8 +40,11 @@
 
                 https://firebase.google.com/docs/functions/get-started
 
+                firebase deploy --only functions
+
 * Setup the invoice sending to gmail address
 
+             firebase deploy --only functions
              cd functions
              yarn add nodemailer
              yarn add nodemailer-html-to-text
