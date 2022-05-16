@@ -29,7 +29,7 @@ const LoginButton = styled.span`
 cursor: pointer;
 `
 
-
+/*
 export function Navbar({Login, loggedIn, logout}){
     return <NavbarStyled>
     <Logo>
@@ -50,6 +50,21 @@ export function Navbar({Login, loggedIn, logout}){
     }
     </UserStatus>
 }}
+
+
    
     </NavbarStyled>;
+
+   
 }
+ */
+
+export function Navbar(){
+    return <NavbarStyled>
+    <Logo>
+    Order System <span role="img" aria-label="pizza Slice">🍕</span></Logo>
+    <UserStatus>  <LoginButton>Log out</LoginButton>
+        <LoginButton >Log in / Sign up</LoginButton>
+    </UserStatus>   
+    </NavbarStyled>
+};
