@@ -8,9 +8,10 @@ import { Order } from './Order/orders';
 import { useOpenFood } from './Hooks/useOpenFood';
 import {useOrders} from './Hooks/useOrders';
 import { useTitle } from './Hooks/useTitle';
-//import { useAuthentication } from './Hooks/useAuthentication';
+import { useAuthentication } from './Hooks/useAuthentication';
 import { OrderDialog } from './Order/orderDialog';
 import { useOrderDialog } from './Hooks/useOrderDialog';
+
 
 /*
 // Sample code for creating DatabaseObject database in firebase
@@ -28,7 +29,7 @@ function App() {
   //const [openFood, setOpenFood] = useState();
   const openFood = useOpenFood();
   const orders = useOrders();
-  //const auth = useAuthentication();
+  const auth = useAuthentication();
   const orderDialog = useOrderDialog();
 
   useTitle({...openFood, ...orders});
@@ -38,8 +39,8 @@ function App() {
       <GlobalStyle/>
       <OrderDialog {...orderDialog} {...orders}/>
       <FoodDialog {...openFood} {...orders}/> 
-      <Navbar/>
-      <Order {...orders} {...openFood} {...orderDialog} />
+      <Navbar {...auth}/>
+      <Order {...orders} {...openFood} {...orderDialog} {...auth} />
       <Banner />
       <Menu {...openFood}/>
      

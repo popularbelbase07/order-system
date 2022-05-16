@@ -22,49 +22,36 @@ text-shadow: 5px 5px 4px #580520;
 const UserStatus = styled.div`
 color: white;
 font-size: 12px;
-margin-right: -800px;
+margin-right: 30px;
 `
 
 const LoginButton = styled.span`
 cursor: pointer;
 `
 
-/*
 export function Navbar({Login, loggedIn, logout}){
-    return <NavbarStyled>
+    return (
+    <NavbarStyled>
     <Logo>
-    Order System <span role="img" aria-label="pizza Slice">🍕</span></Logo>
+    Order System <span role="img" aria-label="pizza Slice">🍕</span>
+    </Logo>
     <UserStatus>   
     {loggedIn !== "Loading" ? (
         <>
-            🧍 {loggedIn ? "Logged in." : ""}
+            🧍 {loggedIn ? ` ${loggedIn.displayName} `: " "}
         {loggedIn ? (
             <LoginButton onClick= {logout}>Log out</LoginButton>
         ): (
+          
         <LoginButton onClick= {Login}>Log in / Sign up</LoginButton>
+       
          )}
         </>
         ) : (
             "Loading..."
         )
     }
-    </UserStatus>
-}}
-
-
-   
-    </NavbarStyled>;
-
-   
-}
- */
-
-export function Navbar(){
-    return <NavbarStyled>
-    <Logo>
-    Order System <span role="img" aria-label="pizza Slice">🍕</span></Logo>
-    <UserStatus>  <LoginButton>Log out</LoginButton>
-        <LoginButton >Log in / Sign up</LoginButton>
-    </UserStatus>   
+    </UserStatus>  
     </NavbarStyled>
-};
+);
+}

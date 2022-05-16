@@ -297,13 +297,20 @@ const deleteItem = index => {
                     </OrderContainer>
               </OrderContent>
             )}
-        <DialogFooter>
-            <OrderFooter>
-                <ConfirmButton onClick={() => {
-                    alert("Checkout confirm")}}> Checkout
-                    </ConfirmButton>
-            </OrderFooter>
-        </DialogFooter>
+            <DialogFooter>
+            
+                <OrderFooter>
+                    <ConfirmButton onClick={() => {
+                        //alert("Checkout confirm")
+                        if(loggedIn){
+                         console.log('Logged in');                       
+                        }
+                        else{
+                            Login();
+                        }
+                    }}> Checkout</ConfirmButton>
+                </OrderFooter> 
+            </DialogFooter>
        
     </OrderStyled>
     );

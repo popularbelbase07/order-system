@@ -34,24 +34,28 @@
     <!--Google fonts Righteous and open-san-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
 
-    <!--Firebase Realtime Database and Authentication setup -->   
+    <!--Firebase Realtime Database and Authentication setup  -->  
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>   
+    
 
     <script>
+
       const firebaseConfig = {
         apiKey: "AIzaSyBfn-qm4LFA75gQm0BjJnHt31dfFkb1ey8",
         authDomain: "order-system-777c5.firebaseapp.com",
-        projectId: "order-system-777c5",
+        databaseURL:"https://order-system-777c5-default-rtdb.firebaseio.com",
+        projectId: "order-system-777c5",      
         storageBucket: "order-system-777c5.appspot.com",
         messagingSenderId: "2185911926",
         appId: "1:2185911926:web:fdc55b465b6c89b2824957",
         measurementId: "G-PVPQF5089R"
       };   
-      // Initialize Firebase    
+    // Initialize Firebase    
       firebase.initializeApp(firebaseConfig);    
      
     </script>
 
-    
   </body>
 </html>
