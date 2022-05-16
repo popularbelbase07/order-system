@@ -225,7 +225,7 @@ export function Order({ orders, setOrders, setOpenFood, Login, loggedIn, setOpen
     `
 
     // tax calculation
-    const tax = subtotal*0.24;
+    const tax = subtotal*0.25;
     const total = subtotal+tax;
 
     // Delete the order
@@ -300,18 +300,21 @@ const deleteItem = index => {
             )}
             <DialogFooter>
             
-                <OrderFooter>
+            { (orders.length> 0) &&
+                <OrderFooter>               
                     <ConfirmButton onClick={() => {
                         //alert("Checkout confirm")
                         if(loggedIn){
-                        // console.log('Logged in');  
+                        // console.log('Logged in'); 
+                        setOpenOrderDialog(true); 
                         sendOrder(orders, loggedIn)                     
                         }
                         else{
                             Login();
                         }
-                    }}> Checkout</ConfirmButton>
-                </OrderFooter> 
+                    }}> Checkout</ConfirmButton> 
+                </OrderFooter> }
+
             </DialogFooter>
        
     </OrderStyled>
