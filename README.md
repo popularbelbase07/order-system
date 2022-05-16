@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+* Style component and Hook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+        yarn add styled-components
+        npm i @react-hook/latest
 
-## Available Scripts
+* Google fonts 
 
-In the project directory, you can run:
+        https://fonts.google.com/specimen/Righteous
 
-### `npm start`
+* search stocks photos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        https://www.pexels.com/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Css filter
 
-### `npm test`
+        https://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_filter
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Favicon logo
 
-### `npm run build`
+        https://favicon.io/emoji-favicons/face-with-monocle
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Logo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        https://emojipedia.org/wastebasket/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*  Firebase Install and set-up
 
-### `npm run eject`
+               https://console.firebase.google.com/project/order-system-777c5/overview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+                npm install firebase-auth --save
+                npm install -g firebase-tools
+                
+                https://order-system-777c5.web.app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Email setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+                https://github.com/firebase/functions-samples/tree/main/quickstarts/email-users
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Create Firebase functions
 
-## Learn More
+                https://firebase.google.com/docs/functions/get-started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Setup the invoice sending to gmail address
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+             cd functions
+             yarn add nodemailer
+             yarn add nodemailer-html-to-text
+             yarn remove nodemailer-html-to-text
+             yarn add html-to-pdf

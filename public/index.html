@@ -33,17 +33,25 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--Google fonts Righteous and open-san-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
-   
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!--Firebase Realtime Database and Authentication setup -->   
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBfn-qm4LFA75gQm0BjJnHt31dfFkb1ey8",
+        authDomain: "order-system-777c5.firebaseapp.com",
+        projectId: "order-system-777c5",
+        storageBucket: "order-system-777c5.appspot.com",
+        messagingSenderId: "2185911926",
+        appId: "1:2185911926:web:fdc55b465b6c89b2824957",
+        measurementId: "G-PVPQF5089R"
+      };   
+      // Initialize Firebase    
+      firebase.initializeApp(firebaseConfig);    
+     
+    </script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
   </body>
 </html>
